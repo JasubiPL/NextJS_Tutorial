@@ -6,6 +6,7 @@ import Image from "next/image";
     src='/image/profile.png'
     height={144}
     width={144}
+    alt='Profile Picture'
     />
   )
 }
