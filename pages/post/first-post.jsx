@@ -1,11 +1,11 @@
 import  Head  from "next/head";
 import Link from "next/link";
 import Script from "next/script";
-import YourComponent from "../../components/YourComponent";
+import Layout from "../../components/Layout";
 
 export default function FirstPost(){
   return (
-    <>
+    <Layout>
       <Head>
         <title>My First Post with Next</title>
       </Head>
@@ -17,8 +17,7 @@ export default function FirstPost(){
         }
       />
       <h1>First Post</h1>
-      <YourComponent />
       <h2><Link href='/'>Back to Home</Link></h2>
-    </>
+    </Layout>
   )
 }
