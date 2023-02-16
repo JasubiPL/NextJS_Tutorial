@@ -4,8 +4,8 @@ import Image from "next/image";
   return(
     <Image
     src='/image/profile.png'
-    height={145}
-    width={145}
+    height={144}
+    width={144}
     alt='Profile Picture'
     />
   )
