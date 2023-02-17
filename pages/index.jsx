@@ -1,7 +1,7 @@
+import Layout from '../components/layout';
 import Head from 'next/head';
 import { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
-import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
