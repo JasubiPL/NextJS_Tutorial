@@ -1,19 +1,11 @@
-import Layout from '../components/layout';
+import Link from 'next/link';
 import Head from 'next/head';
+import Layout from '../components/layout';
 import { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
-import Date from '../components/date';
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
+import Date from '../components/date';
 
 export default function Home({allPostsData}) {
   return (
@@ -44,4 +36,13 @@ export default function Home({allPostsData}) {
       </section>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }
